@@ -7,11 +7,24 @@
 
 import SwiftUI
 
+
 @main
 struct RingSizerApp: App {
+
+
+    let settingsViewModel = SettingsViewModel()
+    let ringSizerViewModel = RingSizeViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabbedView()
+                .environmentObject(settingsViewModel)
+                .environmentObject(ringSizerViewModel)
+                .onAppear {
+                   // loadUserDefaults()
+                }
         }
     }
+
+ 
 }

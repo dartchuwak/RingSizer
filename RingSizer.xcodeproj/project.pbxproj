@@ -3,22 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30F94732AE2B15D00C19C0C /* sizes.json in Resources */ = {isa = PBXBuildFile; fileRef = A30F94722AE2B15D00C19C0C /* sizes.json */; };
+		A30F94762AE2B55D00C19C0C /* RingSizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30F94752AE2B55D00C19C0C /* RingSizeViewModel.swift */; };
+		A31AE6C32AE2EF7B003BE212 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AE6C22AE2EF7B003BE212 /* ResultView.swift */; };
+		A31AE6C62AE3ED34003BE212 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AE6C52AE3ED34003BE212 /* SettingsCell.swift */; };
+		A31AE6C82AE3EE7D003BE212 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AE6C72AE3EE7D003BE212 /* SettingsModel.swift */; };
+		A31AE6CB2AE3F183003BE212 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AE6CA2AE3F183003BE212 /* SettingsViewModel.swift */; };
 		A32C71C12AE2A61800495015 /* RingSizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71C02AE2A61800495015 /* RingSizerApp.swift */; };
-		A32C71C32AE2A61800495015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71C22AE2A61800495015 /* ContentView.swift */; };
+		A32C71C32AE2A61800495015 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71C22AE2A61800495015 /* TabView.swift */; };
 		A32C71C52AE2A61900495015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32C71C42AE2A61900495015 /* Assets.xcassets */; };
 		A32C71C82AE2A61900495015 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32C71C72AE2A61900495015 /* Preview Assets.xcassets */; };
+		A32C71D22AE2A84100495015 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71D12AE2A84100495015 /* RingView.swift */; };
+		A32C71D42AE2A84B00495015 /* FingerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71D32AE2A84B00495015 /* FingerView.swift */; };
+		A32C71D62AE2A85800495015 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71D52AE2A85800495015 /* SettingsView.swift */; };
+		A3880F842AE55C4600C624C8 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3880F832AE55C4600C624C8 /* SliderView.swift */; };
+		A3880F872AE56FFD00C624C8 /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3880F862AE56FFD00C624C8 /* Finger.swift */; };
+		A3880F8A2AE5762E00C624C8 /* SlidingRuler in Frameworks */ = {isa = PBXBuildFile; productRef = A3880F892AE5762E00C624C8 /* SlidingRuler */; };
+		A3AB11042AE3FE66005197D2 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3AB11032AE3FE66005197D2 /* DeviceKit */; };
+		A3AB11062AE401BD005197D2 /* MeasurementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB11052AE401BD005197D2 /* MeasurementSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30F94722AE2B15D00C19C0C /* sizes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sizes.json; sourceTree = "<group>"; };
+		A30F94752AE2B55D00C19C0C /* RingSizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizeViewModel.swift; sourceTree = "<group>"; };
+		A31AE6C22AE2EF7B003BE212 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A31AE6C52AE3ED34003BE212 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		A31AE6C72AE3EE7D003BE212 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		A31AE6CA2AE3F183003BE212 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A32C71BD2AE2A61800495015 /* RingSizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingSizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32C71C02AE2A61800495015 /* RingSizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerApp.swift; sourceTree = "<group>"; };
-		A32C71C22AE2A61800495015 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A32C71C22AE2A61800495015 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		A32C71C42AE2A61900495015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32C71C72AE2A61900495015 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A32C71D12AE2A84100495015 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		A32C71D32AE2A84B00495015 /* FingerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerView.swift; sourceTree = "<group>"; };
+		A32C71D52AE2A85800495015 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A3880F832AE55C4600C624C8 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		A3880F862AE56FFD00C624C8 /* Finger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		A3AB11052AE401BD005197D2 /* MeasurementSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +52,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3880F8A2AE5762E00C624C8 /* SlidingRuler in Frameworks */,
+				A3AB11042AE3FE66005197D2 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A31AE6C12AE2EF56003BE212 /* RingView */ = {
+			isa = PBXGroup;
+			children = (
+				A32C71D12AE2A84100495015 /* RingView.swift */,
+				A31AE6C22AE2EF7B003BE212 /* ResultView.swift */,
+				A3880F832AE55C4600C624C8 /* SliderView.swift */,
+			);
+			path = RingView;
+			sourceTree = "<group>";
+		};
+		A31AE6C42AE3ED1F003BE212 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A32C71D52AE2A85800495015 /* SettingsView.swift */,
+				A31AE6C52AE3ED34003BE212 /* SettingsCell.swift */,
+				A31AE6C72AE3EE7D003BE212 /* SettingsModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A32C71B42AE2A61800495015 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +99,11 @@
 		A32C71BF2AE2A61800495015 /* RingSizer */ = {
 			isa = PBXGroup;
 			children = (
+				A32C71D02AE2A7E300495015 /* Model */,
+				A32C71CF2AE2A7D400495015 /* ViewModel */,
+				A32C71CE2AE2A7CB00495015 /* View */,
 				A32C71C02AE2A61800495015 /* RingSizerApp.swift */,
-				A32C71C22AE2A61800495015 /* ContentView.swift */,
+				A32C71C22AE2A61800495015 /* TabView.swift */,
 				A32C71C42AE2A61900495015 /* Assets.xcassets */,
 				A32C71C62AE2A61900495015 /* Preview Content */,
 			);
@@ -65,6 +116,43 @@
 				A32C71C72AE2A61900495015 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A32C71CE2AE2A7CB00495015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3880F852AE564A200C624C8 /* FingerView */,
+				A31AE6C12AE2EF56003BE212 /* RingView */,
+				A31AE6C42AE3ED1F003BE212 /* Settings */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A32C71CF2AE2A7D400495015 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A30F94752AE2B55D00C19C0C /* RingSizeViewModel.swift */,
+				A31AE6CA2AE3F183003BE212 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A32C71D02AE2A7E300495015 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A30F94722AE2B15D00C19C0C /* sizes.json */,
+				A3AB11052AE401BD005197D2 /* MeasurementSystem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3880F852AE564A200C624C8 /* FingerView */ = {
+			isa = PBXGroup;
+			children = (
+				A32C71D32AE2A84B00495015 /* FingerView.swift */,
+				A3880F862AE56FFD00C624C8 /* Finger.swift */,
+			);
+			path = FingerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +171,10 @@
 			dependencies = (
 			);
 			name = RingSizer;
+			packageProductDependencies = (
+				A3AB11032AE3FE66005197D2 /* DeviceKit */,
+				A3880F892AE5762E00C624C8 /* SlidingRuler */,
+			);
 			productName = RingSizer;
 			productReference = A32C71BD2AE2A61800495015 /* RingSizer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,10 @@
 				Base,
 			);
 			mainGroup = A32C71B42AE2A61800495015;
+			packageReferences = (
+				A3AB11022AE3FE66005197D2 /* XCRemoteSwiftPackageReference "DeviceKit" */,
+				A3880F882AE5762E00C624C8 /* XCLocalSwiftPackageReference "../../Desktop/SlidingRuler-main" */,
+			);
 			productRefGroup = A32C71BE2AE2A61800495015 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +223,7 @@
 			files = (
 				A32C71C82AE2A61900495015 /* Preview Assets.xcassets in Resources */,
 				A32C71C52AE2A61900495015 /* Assets.xcassets in Resources */,
+				A30F94732AE2B15D00C19C0C /* sizes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +234,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32C71C32AE2A61800495015 /* ContentView.swift in Sources */,
+				A31AE6C82AE3EE7D003BE212 /* SettingsModel.swift in Sources */,
+				A32C71D22AE2A84100495015 /* RingView.swift in Sources */,
+				A32C71D62AE2A85800495015 /* SettingsView.swift in Sources */,
+				A32C71D42AE2A84B00495015 /* FingerView.swift in Sources */,
+				A32C71C32AE2A61800495015 /* TabView.swift in Sources */,
+				A30F94762AE2B55D00C19C0C /* RingSizeViewModel.swift in Sources */,
+				A31AE6CB2AE3F183003BE212 /* SettingsViewModel.swift in Sources */,
+				A3880F872AE56FFD00C624C8 /* Finger.swift in Sources */,
+				A31AE6C32AE2EF7B003BE212 /* ResultView.swift in Sources */,
 				A32C71C12AE2A61800495015 /* RingSizerApp.swift in Sources */,
+				A3880F842AE55C4600C624C8 /* SliderView.swift in Sources */,
+				A3AB11062AE401BD005197D2 /* MeasurementSystem.swift in Sources */,
+				A31AE6C62AE3ED34003BE212 /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +386,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +395,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Evgenii.Mikhailov.RingSizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +418,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +427,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Evgenii.Mikhailov.RingSizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +458,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A3880F882AE5762E00C624C8 /* XCLocalSwiftPackageReference "../../Desktop/SlidingRuler-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Desktop/SlidingRuler-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3AB11022AE3FE66005197D2 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3880F892AE5762E00C624C8 /* SlidingRuler */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SlidingRuler;
+		};
+		A3AB11032AE3FE66005197D2 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3AB11022AE3FE66005197D2 /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A32C71B52AE2A61800495015 /* Project object */;
 }
