@@ -27,7 +27,7 @@ class RingSizeViewModel: ObservableObject {
     @Published var ringSize: Double = 0.0
     let maxRingSizeInPoints: Double = 150
     let minRingSizeInPoints: Double = 50
-    let maxRingSize: Double = 150
+    let maxRingSize: Double = 200
     let minRingSize: Double = 50
 
     func printDebigDeviceInfo() {

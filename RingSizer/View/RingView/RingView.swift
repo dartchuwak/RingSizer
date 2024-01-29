@@ -9,9 +9,6 @@ import SwiftUI
 import SlidingRuler
 
 struct RingView: View {
-
-
-
     @EnvironmentObject var ringSizerViewModel: RingSizeViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
     @State private var ringSize: Double = 100
@@ -30,78 +27,34 @@ struct RingView: View {
 
     var body: some View {
         VStack {
-            //
-            Spacer()
-                .frame(height: 10)
-            //
-            HStack {
-                Button(action: {
-                    isSettingsViewPresented.toggle()
-                }, label: {
-                    Image(systemName: "line.3.horizontal")
-                        .font(.title)
-                })
-                .fullScreenCover(isPresented: $isSettingsViewPresented, content: {
-                    SettingsView()
-                })
+            Spacer().frame(height: 40)
+            Text("Place your ring on the circle")
+                .font(.title)
                 .foregroundStyle(Color("baseColor"))
-                //
-                Spacer()
-                //
-                Button(action: {
-                    isSettingsViewPresented.toggle()
-                }, label: {
-                    Image(systemName: "info.circle")
-                        .font(.title)
-                })
-                .fullScreenCover(isPresented: $isSettingsViewPresented, content: {
-                    SettingsView()
-                })
-                .foregroundStyle(Color("baseColor"))
-            }.padding(.horizontal)
-            //
-            VStack {
-                Text("Place your ring")
-                    .font(.title)
-                    .foregroundStyle(Color("baseColor"))
-                Text("on the circle")
-                    .font(.title)
-                    .foregroundStyle(Color("baseColor"))
+            Spacer().frame(height: 32)
+            ExtractedView(ringSize: $ringSize, ringSizerViewModel: ringSizerViewModel)
+            Spacer().frame(height: 32)
+            Button(action: {
+                buttonPressed()
+            }) {
+                Text("Get the ring size")
+                    .fontWeight(.medium)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
             }
-
-            //
-            Spacer()
-            ZStack {
-                RoundedRectangle(cornerSize: CGSize(width: 25, height: 25))
-                    .frame(width: ringSizerViewModel.screenWidth, height: ringSizerViewModel.screenWidth)
-                    .foregroundColor(Color(white: 0.95))
-                Circle()
-                    .foregroundStyle(Color("baseColor"))
-                    .frame(width: ringSize,
-                           height: ringSize)
-                Button(action: {
-                    buttonPressed()
-                }) {
-                    Text("Get the ring size")
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-                }
-                .background(ringSizerViewModel.isVisible ? Color("baseColor") : Color.gray)
-                .foregroundColor(.white)
-                .clipShape(Capsule())
-                .offset(y: (ringSizerViewModel.screenWidth / 3))
-            }
-            Spacer()
-
+            .background(ringSizerViewModel.isVisible ? Color("baseColor") : Color.gray)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+            Spacer().frame(height: 32)
             Text("Use the slider to adjust size")
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundStyle(Color("baseColor"))
             Spacer()
-                .frame(height: 10)
-            Text(ringSizerViewModel.convert(points: ringSize).description)
-                .font(.title2)
-                .fontWeight(.bold)
+                .frame(height: 32)
+            Text("\(ringSizerViewModel.convert(points: ringSize).description) mm")
+                .font(.system(size: 32))
+                .fontWeight(.heavy)
                 .foregroundStyle(Color("baseColor"))
             SliderView(ringSize: $ringSize, ringSizerViewModel: ringSizerViewModel)
                 .scaleEffect(CGSize(width: 1.5, height: 1.5))
@@ -126,12 +79,31 @@ struct RingView: View {
         withAnimation {
             showOverlay.toggle()
         }
-
-
     }
 }
 
 #Preview {
     RingView()
         .environmentObject(RingSizeViewModel())
+        .environmentObject(SettingsViewModel())
+}
+
+struct ExtractedView: View {
+    @Binding var ringSize: Double
+    let ringSizerViewModel: RingSizeViewModel
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerSize: CGSize(width: 30, height: 30))
+                .frame(width: ringSizerViewModel.screenWidth, height: ringSizerViewModel.screenWidth)
+                .foregroundColor(Color(white: 0.95))
+            VStack {
+                Circle()
+                    .stroke(.black, lineWidth: 3)
+                    .foregroundStyle(.clear)
+                    .frame(width: ringSize,
+                           height: ringSize)
+            }
+            .frame(width: ringSizerViewModel.screenWidth, height: ringSizerViewModel.screenWidth)
+        }
+    }
 }

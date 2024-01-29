@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,14 +14,13 @@
 		A31AE6C82AE3EE7D003BE212 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AE6C72AE3EE7D003BE212 /* SettingsModel.swift */; };
 		A31AE6CB2AE3F183003BE212 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31AE6CA2AE3F183003BE212 /* SettingsViewModel.swift */; };
 		A32C71C12AE2A61800495015 /* RingSizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71C02AE2A61800495015 /* RingSizerApp.swift */; };
-		A32C71C32AE2A61800495015 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71C22AE2A61800495015 /* TabView.swift */; };
 		A32C71C52AE2A61900495015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32C71C42AE2A61900495015 /* Assets.xcassets */; };
 		A32C71C82AE2A61900495015 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32C71C72AE2A61900495015 /* Preview Assets.xcassets */; };
 		A32C71D22AE2A84100495015 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71D12AE2A84100495015 /* RingView.swift */; };
-		A32C71D42AE2A84B00495015 /* FingerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71D32AE2A84B00495015 /* FingerView.swift */; };
 		A32C71D62AE2A85800495015 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C71D52AE2A85800495015 /* SettingsView.swift */; };
+		A35323A12B3C5C5D001905DA /* SlidingRuler in Frameworks */ = {isa = PBXBuildFile; productRef = A35323A02B3C5C5D001905DA /* SlidingRuler */; };
+		A35323A32B3C5DC7001905DA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A35323A22B3C5DC7001905DA /* Localizable.xcstrings */; };
 		A3880F842AE55C4600C624C8 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3880F832AE55C4600C624C8 /* SliderView.swift */; };
-		A3880F872AE56FFD00C624C8 /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3880F862AE56FFD00C624C8 /* Finger.swift */; };
 		A3880F8A2AE5762E00C624C8 /* SlidingRuler in Frameworks */ = {isa = PBXBuildFile; productRef = A3880F892AE5762E00C624C8 /* SlidingRuler */; };
 		A3AB11042AE3FE66005197D2 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3AB11032AE3FE66005197D2 /* DeviceKit */; };
 		A3AB11062AE401BD005197D2 /* MeasurementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB11052AE401BD005197D2 /* MeasurementSystem.swift */; };
@@ -36,14 +35,12 @@
 		A31AE6CA2AE3F183003BE212 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A32C71BD2AE2A61800495015 /* RingSizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingSizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32C71C02AE2A61800495015 /* RingSizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerApp.swift; sourceTree = "<group>"; };
-		A32C71C22AE2A61800495015 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		A32C71C42AE2A61900495015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32C71C72AE2A61900495015 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A32C71D12AE2A84100495015 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
-		A32C71D32AE2A84B00495015 /* FingerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerView.swift; sourceTree = "<group>"; };
 		A32C71D52AE2A85800495015 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A35323A22B3C5DC7001905DA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A3880F832AE55C4600C624C8 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		A3880F862AE56FFD00C624C8 /* Finger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
 		A3AB11052AE401BD005197D2 /* MeasurementSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +51,7 @@
 			files = (
 				A3880F8A2AE5762E00C624C8 /* SlidingRuler in Frameworks */,
 				A3AB11042AE3FE66005197D2 /* DeviceKit in Frameworks */,
+				A35323A12B3C5C5D001905DA /* SlidingRuler in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +97,13 @@
 		A32C71BF2AE2A61800495015 /* RingSizer */ = {
 			isa = PBXGroup;
 			children = (
+				A35323A42B3C6395001905DA /* App */,
 				A32C71D02AE2A7E300495015 /* Model */,
 				A32C71CF2AE2A7D400495015 /* ViewModel */,
 				A32C71CE2AE2A7CB00495015 /* View */,
-				A32C71C02AE2A61800495015 /* RingSizerApp.swift */,
-				A32C71C22AE2A61800495015 /* TabView.swift */,
 				A32C71C42AE2A61900495015 /* Assets.xcassets */,
 				A32C71C62AE2A61900495015 /* Preview Content */,
+				A35323A22B3C5DC7001905DA /* Localizable.xcstrings */,
 			);
 			path = RingSizer;
 			sourceTree = "<group>";
@@ -121,7 +119,6 @@
 		A32C71CE2AE2A7CB00495015 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A3880F852AE564A200C624C8 /* FingerView */,
 				A31AE6C12AE2EF56003BE212 /* RingView */,
 				A31AE6C42AE3ED1F003BE212 /* Settings */,
 			);
@@ -146,13 +143,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A3880F852AE564A200C624C8 /* FingerView */ = {
+		A35323A42B3C6395001905DA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				A32C71D32AE2A84B00495015 /* FingerView.swift */,
-				A3880F862AE56FFD00C624C8 /* Finger.swift */,
+				A32C71C02AE2A61800495015 /* RingSizerApp.swift */,
 			);
-			path = FingerView;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +170,7 @@
 			packageProductDependencies = (
 				A3AB11032AE3FE66005197D2 /* DeviceKit */,
 				A3880F892AE5762E00C624C8 /* SlidingRuler */,
+				A35323A02B3C5C5D001905DA /* SlidingRuler */,
 			);
 			productName = RingSizer;
 			productReference = A32C71BD2AE2A61800495015 /* RingSizer.app */;
@@ -201,11 +198,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = A32C71B42AE2A61800495015;
 			packageReferences = (
 				A3AB11022AE3FE66005197D2 /* XCRemoteSwiftPackageReference "DeviceKit" */,
-				A3880F882AE5762E00C624C8 /* XCLocalSwiftPackageReference "../../Desktop/SlidingRuler-main" */,
+				A353239F2B3C5C5D001905DA /* XCRemoteSwiftPackageReference "SlidingRuler" */,
 			);
 			productRefGroup = A32C71BE2AE2A61800495015 /* Products */;
 			projectDirPath = "";
@@ -223,6 +221,7 @@
 			files = (
 				A32C71C82AE2A61900495015 /* Preview Assets.xcassets in Resources */,
 				A32C71C52AE2A61900495015 /* Assets.xcassets in Resources */,
+				A35323A32B3C5DC7001905DA /* Localizable.xcstrings in Resources */,
 				A30F94732AE2B15D00C19C0C /* sizes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,11 +236,8 @@
 				A31AE6C82AE3EE7D003BE212 /* SettingsModel.swift in Sources */,
 				A32C71D22AE2A84100495015 /* RingView.swift in Sources */,
 				A32C71D62AE2A85800495015 /* SettingsView.swift in Sources */,
-				A32C71D42AE2A84B00495015 /* FingerView.swift in Sources */,
-				A32C71C32AE2A61800495015 /* TabView.swift in Sources */,
 				A30F94762AE2B55D00C19C0C /* RingSizeViewModel.swift in Sources */,
 				A31AE6CB2AE3F183003BE212 /* SettingsViewModel.swift in Sources */,
-				A3880F872AE56FFD00C624C8 /* Finger.swift in Sources */,
 				A31AE6C32AE2EF7B003BE212 /* ResultView.swift in Sources */,
 				A32C71C12AE2A61800495015 /* RingSizerApp.swift in Sources */,
 				A3880F842AE55C4600C624C8 /* SliderView.swift in Sources */,
@@ -380,7 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RingSizer/Preview Content\"";
-				DEVELOPMENT_TEAM = UN5MX5RT64;
+				DEVELOPMENT_TEAM = WQ62ZKQJPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -393,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Evgenii.Mikhailov.RingSizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.efishbein.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -412,7 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RingSizer/Preview Content\"";
-				DEVELOPMENT_TEAM = UN5MX5RT64;
+				DEVELOPMENT_TEAM = WQ62ZKQJPF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -425,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Evgenii.Mikhailov.RingSizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.efishbein.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -459,14 +455,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		A3880F882AE5762E00C624C8 /* XCLocalSwiftPackageReference "../../Desktop/SlidingRuler-main" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../Desktop/SlidingRuler-main";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		A353239F2B3C5C5D001905DA /* XCRemoteSwiftPackageReference "SlidingRuler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Weixuanf/SlidingRuler";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		A3AB11022AE3FE66005197D2 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devicekit/DeviceKit.git";
@@ -478,6 +475,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A35323A02B3C5C5D001905DA /* SlidingRuler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A353239F2B3C5C5D001905DA /* XCRemoteSwiftPackageReference "SlidingRuler" */;
+			productName = SlidingRuler;
+		};
 		A3880F892AE5762E00C624C8 /* SlidingRuler */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SlidingRuler;
