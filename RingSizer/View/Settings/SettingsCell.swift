@@ -30,7 +30,6 @@ struct SettingsCell: View {
                 .tint(.black)
                 .buttonStyle(.bordered)
                 .pickerStyle(.menu)
-
             }
         }
     }

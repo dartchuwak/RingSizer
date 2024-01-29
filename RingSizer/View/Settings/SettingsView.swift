@@ -28,7 +28,6 @@ struct SettingsView: View {
                 Button(action: {
                     ringViewModel.saveUserDefaults(system: ringViewModel.selectedCountry)
                     presentationMode.wrappedValue.dismiss()
-
                 }, label: {
                     Text("Save")
                 })
@@ -48,7 +47,6 @@ struct SettingsView: View {
                              needsStepper: item.needsStepper,
                              viewModel: viewModel,
                              selectedCountry: $ringViewModel.selectedCountry, selectedAccuracy:$ringViewModel.selectedAccuracy)
-
             }
         }
     }

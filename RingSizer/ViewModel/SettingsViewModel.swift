@@ -8,23 +8,24 @@
 import Foundation
 
 class SettingsViewModel: ObservableObject, Observable {
+    let appVersion: String?
+    var items: [SettingsModel]
 
-  
+    init() {
+         appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+         items = [
+            .init(imageName: "globe", text: "Current country", needsPicker: true, needsStepper: false),
+            .init(imageName: "globe", text: "App version \(appVersion ?? "")", needsPicker: false, needsStepper: false)
+        ]
+    }
 
-    var items: [SettingsModel] = [
-        .init(imageName: "globe", text: "Current country", needsPicker: true, needsStepper: false),
-        .init(imageName: "scroll", text: "Terms of use", needsPicker: false, needsStepper: false),
-        .init(imageName: "checkmark.shield", text: "Privacy policy", needsPicker: false, needsStepper: false)
-    ]
+
 
     let measurementSystems = [
         MeasurementSystem(country: "USA", units: "inches"),
         MeasurementSystem(country: "Metric", units: "millimeters"),
         // Добавьте другие страны и системы измерения
     ]
-
-  //  let accuracy = [0,1,2,3,4,5,6,7,8,9,10]
-
 }
 
 

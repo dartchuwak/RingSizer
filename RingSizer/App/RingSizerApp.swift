@@ -10,21 +10,15 @@ import SwiftUI
 
 @main
 struct RingSizerApp: App {
-
-
     let settingsViewModel = SettingsViewModel()
     let ringSizerViewModel = RingSizeViewModel()
 
     var body: some Scene {
         WindowGroup {
-            TabbedView()
+          RingView()
                 .environmentObject(settingsViewModel)
                 .environmentObject(ringSizerViewModel)
-                .onAppear {
-                   // loadUserDefaults()
-                }
+                .preferredColorScheme(.light)
         }
     }
-
- 
 }

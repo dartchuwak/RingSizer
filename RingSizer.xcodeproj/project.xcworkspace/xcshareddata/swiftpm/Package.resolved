@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "slidingruler",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Weixuanf/SlidingRuler",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2ce087ae6ee82027722219931644876ad83afdd8"
+      }
+    },
+    {
       "identity" : "smoothoperators",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Pyroh/SmoothOperators.git",
